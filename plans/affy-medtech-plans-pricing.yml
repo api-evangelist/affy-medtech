@@ -1,0 +1,17 @@
+generated: '2026-09-02'
+method: searched
+source: https://affymedtech.com/
+plan_count: 0
+plans: []
+note: >-
+  Affy MedTech publishes no pricing at all. affymedtech.com serves a 1,235-byte "Coming
+  Soon" placeholder (HTTP 200) and every other path on the site returns 404, including
+  /pricing. The Lynx platform is sold as an enterprise deployment to hospitals and
+  healthcare delivery groups through a direct sales motion; there is no self-serve tier,
+  no public rate card and no "contact us" pricing page. An honest zero. No `Plans`
+  pointer is wired in apis.yml, because there is no published pricing surface to assert.
+evidence:
+- url: https://affymedtech.com/
+  status: 200
+- url: https://affymedtech.com/pricing
+  status: 404

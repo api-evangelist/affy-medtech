@@ -1,7 +1,24 @@
 aid: affy-medtech
 name: Affy MedTech
-description: 'Affy MedTech is a company surfaced via the API Evangelist harvest backlog (source: openehr-coalition)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Affy MedTech is a UK- and Netherlands-based health technology company behind Lynx, a
+  modular, cloud-hosted platform for hospitals and healthcare delivery organisations that
+  consolidates authoritative treatment information, patient booking, electronic medical
+  records, clinical documentation, billing and claims validation, reporting, remote
+  diagnostics and ambulatory ECG into a single system. Its Patient Interaction Module
+  gives patients access to their own records, prescriptions, diagnostic images and
+  treatment plans with self-service booking, digital consent and online payment, while
+  the Super Switch Module acts as a real-time integration bridge between hospital systems
+  such as radiology, laboratory and billing. The platform is marketed alongside Total
+  Doctor / Total Health and is deployed by international hospital groups as well as
+  smaller clinics and specialist centres. Affy MedTech is a Silver Industry Partner of
+  openEHR International and operates alongside Vertice Software Solutions, which
+  publishes Lynx in other markets. AFFY MEDTECH UKI LTD (company number 17000777) was
+  incorporated in England on 30 January 2026 and is controlled by Affy Medtech B.V. of
+  Amsterdam. As of September 2026 affymedtech.com serves only a "Coming Soon" placeholder
+  and the company publishes no public developer program, API reference or
+  machine-readable contract.
+image: https://openehr.org/wp-content/uploads/2026/05/300x300-17.png
 url: https://raw.githubusercontent.com/api-evangelist/affy-medtech/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:openehr-coalition
@@ -12,6 +29,15 @@ created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Health Care
+- Health IT
+- Electronic Health Records
+- openEHR
+- Hospital Management
+- Medical Records
+- Interoperability
+- Remote Diagnostics
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +45,71 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/affy-medtech-domain-security.yml
 - type: Website
   url: https://affymedtech.com/
+- type: Conformance
+  url: conformance/affy-medtech-conformance.yml
+- type: LLMsTxt
+  url: llms/affy-medtech-llms.txt
+x-corporate:
+  registrations:
+  - jurisdiction: GB
+    registry: Companies House (England and Wales)
+    legal_name: AFFY MEDTECH UKI LTD
+    company_number: '17000777'
+    incorporated: '2026-01-30'
+    status: Active
+    registered_office: Fortius Clinic, 17 Fitzhardinge Street, London, W1H 6EQ, United Kingdom
+    sic:
+    - '62012'
+    - '62020'
+    - '62090'
+    - '63110'
+    source: https://find-and-update.company-information.service.gov.uk/company/17000777
+  - jurisdiction: NL
+    registry: Kamer van Koophandel (via UK PSC filing)
+    legal_name: Affy Medtech B.V.
+    company_number: '96394838'
+    registered_office: Hogehilweg 10, Amsterdam, 1101CC, Netherlands
+    relationship: >-
+      Person with significant control of AFFY MEDTECH UKI LTD — 75%+ of shares and voting
+      rights, right to appoint or remove directors, notified 2026-01-30.
+    source: https://find-and-update.company-information.service.gov.uk/company/17000777/persons-with-significant-control
+  officers:
+  - name: Charles Jacobus Gysbertus Niehaus
+    role: Director
+    appointed: '2026-01-30'
+    source: https://find-and-update.company-information.service.gov.uk/company/17000777/officers
+  memberships:
+  - organization: openEHR International
+    level: Silver Industry Partner
+    region: UK
+    source: https://openehr.org/industry-partners/
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    affymedtech.com serves a 1,235-byte "Coming Soon" placeholder and returns a real 404
+    on every other path including /docs, /openapi.json and all eight probed /.well-known/
+    documents, while api., docs., developer. and portal. subdomains of affymedtech.com do not resolve in
+    DNS at all — the Lynx platform is sold and deployed as an enterprise hospital system
+    with no public developer program of any kind.
+  evidence:
+  - url: https://affymedtech.com/
+    status: 200
+  - url: https://affymedtech.com/openapi.json
+    status: 404
+  - url: https://affymedtech.com/docs
+    status: 404
+  - url: https://affymedtech.com/.well-known/agent-card.json
+    status: 404
+  - url: https://affymedtech.com/llms.txt
+    status: 404
+  checked: '2026-09-02'

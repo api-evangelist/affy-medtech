@@ -1,0 +1,99 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTPS probes of every host Affy MedTech resolves on, 2026-09-02
+note: >-
+  Every named /.well-known/ path was probed on both apex and www. All returned a real
+  HTTP 404 with the site's own 2,400-byte error page (not an SPA catch-all 200), so no
+  WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a verified
+  absence, not a served surface. No api./docs./developer./portal./status. subdomain
+  resolves in DNS, so there was no second host to probe.
+hosts:
+- host: affymedtech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.affymedtech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery run against every host that resolves. No OpenAPI, Swagger,
+    GraphQL, MCP, AsyncAPI or A2A agent card was found. No agent card was written, per the
+    search-only rule.
+  probes:
+  - url: https://affymedtech.com/openapi.json
+    status: 404
+  - url: https://affymedtech.com/openapi.yaml
+    status: 404
+  - url: https://affymedtech.com/swagger.json
+    status: 404
+  - url: https://affymedtech.com/v1/openapi.json
+    status: 404
+  - url: https://affymedtech.com/api-docs
+    status: 404
+  - url: https://affymedtech.com/docs
+    status: 404
+  - url: https://affymedtech.com/redoc
+    status: 404
+  - url: https://affymedtech.com/llms.txt
+    status: 404
+  - url: https://affymedtech.com/apis.json
+    status: 404
+  - url: https://affymedtech.com/robots.txt
+    status: 404
+  - url: https://affymedtech.com/sitemap.xml
+    status: 404
+  dns_misses:
+  - api.affymedtech.com
+  - docs.affymedtech.com
+  - developer.affymedtech.com
+  - developers.affymedtech.com
+  - app.affymedtech.com
+  - lynx.affymedtech.com
+  - portal.affymedtech.com
+  - status.affymedtech.com

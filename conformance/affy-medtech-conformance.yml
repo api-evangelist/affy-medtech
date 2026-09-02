@@ -1,0 +1,52 @@
+generated: '2026-09-02'
+method: searched
+source: https://openehr.org/industry-partners/
+note: >-
+  Affy MedTech publishes no machine-readable contract, so nothing here could be verified
+  against a spec. Every entry below is therefore recorded as conforms:false — an
+  unverifiable claim, not a failed one. No `Compliance` pointer is emitted in apis.yml,
+  because the company publishes no certification, audit report or trust page of its own.
+conformance:
+- id: openehr
+  name: openEHR (clinical data platform specifications)
+  conforms: false
+  status: member-not-verified
+  evidence: >-
+    Affy MedTech is listed as a Silver Industry Partner (UK) on the openEHR International
+    industry partners page, fetched 2026-09-02 (HTTP 200). openEHR Industry Partnership is
+    a membership commitment to implementing openEHR, not a conformance certification, and
+    the company publishes no openEHR REST (ITS-REST) endpoint, CDR base URL or contract
+    that could be checked against the specification.
+  evidence_url: https://openehr.org/industry-partners/
+- id: hipaa
+  name: HIPAA
+  conforms: false
+  status: third-party-claim-only
+  evidence: >-
+    A third-party article about the Lynx platform states that clinics adopt it "to meet
+    strict data protection regulations such as HIPAA and GDPR". This is a marketing
+    statement on a publisher's blog, not a statement by Affy MedTech, and no attestation,
+    SOC 2 report, BAA text or trust page was found on any Affy MedTech host.
+  evidence_url: https://www.totalhealth.co.uk/blog/how-single-platform-transforming-healthcare-what-are-implications-patients
+- id: gdpr
+  name: GDPR
+  conforms: false
+  status: third-party-claim-only
+  evidence: >-
+    Same third-party article as the HIPAA row. affymedtech.com serves a placeholder page
+    with no privacy policy, no DPA and no terms of service (site-wide 404s on every probed
+    path), so no first-party GDPR statement exists to record.
+  evidence_url: https://www.totalhealth.co.uk/blog/how-single-platform-transforming-healthcare-what-are-implications-patients
+domain_standard:
+  market: health-it / electronic health records
+  candidate_standards:
+  - openEHR ITS-REST
+  - HL7 FHIR
+  - DICOM / DICOMweb
+  - HL7 v2
+  declared_in_contract: false
+  note: >-
+    domain_standard_conformance reads the CONTRACT, not a prose claim. Affy MedTech
+    publishes no contract, so there is no spec location to point at. The openEHR
+    Industry Partnership makes openEHR ITS-REST the standard most worth probing the day
+    the company publishes an API. REWARD-ONLY check: absent, not failed.
