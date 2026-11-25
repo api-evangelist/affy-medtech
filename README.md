@@ -80,19 +80,19 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Affy Medtech Domain Security](https://apis.io/security/affy-medtech/affy-medtech-domain-security/)
+- [Affy MedTech Domain Security](https://apis.io/security/affy-medtech/affy-medtech-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Affy Medtech Plans Pricing](https://apis.io/plans/affy-medtech/affy-medtech-plans-pricing/)
+- [Affy MedTech Plans Pricing](https://apis.io/plans/affy-medtech/affy-medtech-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Affy Medtech Rate Limits](https://apis.io/rate-limits/affy-medtech/affy-medtech-rate-limits/)
+- [Affy MedTech Rate Limits](https://apis.io/rate-limits/affy-medtech/affy-medtech-rate-limits/)
 
 ## Where to find this API
 
@@ -102,7 +102,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 5.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 4.3** — minimal · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
@@ -136,8 +136,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 8.6** — Health
+**Regulatory alignment 3.9** — Health
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/affy-medtech/](https://apis.io/providers/affy-medtech/).
 
